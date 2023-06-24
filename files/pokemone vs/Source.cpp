@@ -12,6 +12,7 @@
 #include <memory>
 #include "Pokemon.h"
 #include "Mc.h"
+#include "screenclear.h"
 using namespace std;
 
 // game over exception
@@ -25,7 +26,9 @@ public:
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 void adventure_ui(Mc &test)
 {
-    system("cls");
+    screenClearSingleton& singleton = screenClearSingleton::instance();
+    singleton.clearScreen();
+
     string woord;
     int stage;
 
@@ -188,7 +191,7 @@ void adventure_ui(Mc &test)
     }
     cout << "press enter to continue: " << endl;
     cin.ignore();
-    system("cls");
+    singleton.clearScreen(); 
 }
 
 void inventory_ui(Mc &test)
@@ -233,7 +236,8 @@ void inventory_ui(Mc &test)
         }
         // cout << "naam: " << chosen.get_naam() << "soort: " << chosen.get_soort(); // test voor
     }
-    system("cls");
+    screenClearSingleton& singleton = screenClearSingleton::instance();
+    singleton.clearScreen();
 }
 void heal_pokemons(Mc &test)
 {
@@ -246,11 +250,17 @@ void heal_pokemons(Mc &test)
     cout << endl;
     cout << "press enter to continue: " << endl;
     cin.ignore();
-    system("cls");
+
+    screenClearSingleton& singleton = screenClearSingleton::instance();
+    singleton.clearScreen();
 }
 
 void start() // main programma
 {
+    screenClearSingleton& singleton = screenClearSingleton::instance();
+    singleton.setUp();
+    cout << endl;
+    singleton.clearScreen();
     for (int i = 0; i < 5; i++)
     {
         cout << "//////////////////////////////////////////////";
