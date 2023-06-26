@@ -18,10 +18,12 @@ private:
     vector<unique_ptr<Pokemon>> inventory;
     int stage; // stage
     int stage_unlocked;
+    string name; 
 
 public:
-    Mc()
+    Mc(string name_="ash")
     {
+        name = name_;
         srand(time(NULL));
         // default pokemon
         Common defa(8, 4);

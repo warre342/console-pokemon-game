@@ -13,6 +13,7 @@
 #include "Pokemon.h"
 #include "Mc.h"
 #include "screenclear.h"
+#include "savefile.h"
 using namespace std;
 
 // game over exception
@@ -259,6 +260,7 @@ void start() // main programma
 {
     screenClearSingleton& singleton = screenClearSingleton::instance();
     singleton.setUp();
+    
     cout << endl;
     singleton.clearScreen();
     for (int i = 0; i < 5; i++)
@@ -292,6 +294,10 @@ void start() // main programma
 
 int main()
 {
+    //Mc test;
+    saveFile saver;
+
+    /*
     try
     {
         start();
@@ -300,8 +306,11 @@ int main()
     {
         return 0;
     }
-    //Common defa(8, 4);
-    //cout<<defa.nextEvolution();
+    */
+    /*
+    Common defa(8, 4);
+    cout<<defa.nextEvolution();
+    */
 
 }
 // errors:

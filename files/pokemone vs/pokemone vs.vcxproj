@@ -131,8 +131,11 @@
     <ClCompile Include="Source.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="saveFile2.txt" />
+    <ClInclude Include="saveFile.txt" />
     <ClInclude Include="Mc.h" />
     <ClInclude Include="Pokemon.h" />
+    <ClInclude Include="savefile.h" />
     <ClInclude Include="screenclear.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
