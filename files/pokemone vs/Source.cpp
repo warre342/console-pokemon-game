@@ -255,6 +255,16 @@ void heal_pokemons(Mc &test)
     screenClearSingleton& singleton = screenClearSingleton::instance();
     singleton.clearScreen();
 }
+void merge_pokemons() {
+    string woord; 
+    while (woord != "ESCAPE") {
+        string woord2;
+        cout << "je opties zijn MERGE, ESCAPE"<<endl;
+        cin>>woord
+    
+    }
+
+}
 
 void start() // main programma
 {
@@ -295,7 +305,7 @@ void start() // main programma
 int main()
 {
     //Mc test;
-    saveFile saver;
+    //saveFile saver;
 
     /*
     try
@@ -307,14 +317,15 @@ int main()
         return 0;
     }
     */
-    /*
-    Common defa(8, 4);
-    cout<<defa.nextEvolution();
-    */
+    
+    Legendary defa;
+    cout<<defa.getNextEvolution();
+    
 
 }
 // errors:
 //  geen
 // TO DO:
-// bossfight/ events, evolutions, level up: override methode ++( pokemon object), story (mss inlezen uit txt)
+// bossfight/ events, evolutions (pokemons combinen) , level up: override methode ++( pokemon object), story (mss inlezen uit txt)
 // save file, opties tussen save files, game minder moeilijk maken, mss hardcore versie en niet hardcore
+//gui met ai generated images

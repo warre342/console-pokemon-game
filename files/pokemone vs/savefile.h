@@ -27,8 +27,8 @@ private:
 	Mc mc1;
 	Mc mc2;
 public:
-
-	saveFile(Mc mc1, Mc mc2):mc1(mc1), mc2(mc2) {
+	
+	saveFile() {
 		string data;
 		ifstream infile;
 		infile.open(bestandsnaam1);
@@ -39,14 +39,6 @@ public:
 		}
 		infile.close();
 	}
-	Mc restoreMc();
-	void saveMc();
+	//Mc restoreMc();
+	//void saveMc();
 };
-Mc saveFile::restoreMc() {
-
-
-}
-void saveFile::saveMc() {
-
-
-}

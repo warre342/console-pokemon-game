@@ -1,6 +1,6 @@
 ﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(517,5): warning MSB8028: The intermediate directory (x64\Debug\) contains files shared from another project (pokemone vs.vcxproj).  This can lead to incorrect clean and rebuild behavior.
   Source.cpp
-C:\Users\warre\Desktop\content\github\pokemon\console-pokemon-game\files\pokemone vs\Mc.h(25,19): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\warre\Desktop\content\github\pokemon\console-pokemon-game\files\pokemone vs\Mc.h(27,19): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
 C:\Users\warre\Desktop\content\github\pokemon\console-pokemon-game\files\pokemone vs\Source.cpp(115,25): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
 C:\Users\warre\Desktop\content\github\pokemon\console-pokemon-game\files\pokemone vs\Source.cpp(126,52): warning C4101: 'e': unreferenced local variable
 C:\Users\warre\Desktop\content\github\pokemon\console-pokemon-game\files\pokemone vs\Source.cpp(217,40): warning C4101: 'e': unreferenced local variable

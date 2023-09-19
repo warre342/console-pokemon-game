@@ -31,7 +31,7 @@ public:
     //~Pokemon() { cout << naam << " has fainted!" << endl; }
     void geef_naam();        // met UI
     char battle(Pokemon &b); // return a als this heeft gewonnen, b als b heeft gewonnen, c als niemand heeft gewonnen
-    string nextEvolution();
+    string getNextEvolution();
     // friend functies
     friend void showInventory(int page); // nog niet gemaakt
     friend void showInventory();
@@ -48,7 +48,7 @@ public:
     void setNaam(string naam_) { naam = naam_; }
     void setHp(int hp_) { hp = hp_; }
 };
-vector<vector<string>> Pokemon::evo_namen = {{"charmander", "charmeleon", "charizard"}, {"eevee", "vaporion", "null"}, {"dratini", "dragonair", "dragonite"}, {"magicarp", "null", "gyarados"}};
+vector<vector<string>> Pokemon::evo_namen = {{"charmander", "charmeleon", "charizard"}, {"eevee", "vaporion", "null"}, {"dratini", "dragonair", "dragonite"}, {"magicarp", "temp", "gyarados"}};
 void Pokemon::geef_naam() // naam veranderen met UI
 {
     string set_naam;
@@ -98,7 +98,7 @@ char Pokemon::battle(Pokemon &b)
     }
     cout << endl;
 }
-string Pokemon::nextEvolution()
+string Pokemon::getNextEvolution()
 {
     cout << "pokemon soort: " << soort << endl;
     int vecto = 0;
@@ -110,7 +110,7 @@ string Pokemon::nextEvolution()
         {
             if (pokes == soort)
             {
-                if (pokemons == 3)
+                if (pokemons == 2)//was 3
                 {
                     cout << "deze pokemons kan niet meer evolueren " << endl;
                     return "null";
