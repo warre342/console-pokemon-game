@@ -260,7 +260,7 @@ void merge_pokemons() {
     while (woord != "ESCAPE") {
         string woord2;
         cout << "je opties zijn MERGE, ESCAPE"<<endl;
-        cin>>woord
+        cin >> woord;
     
     }
 
@@ -307,7 +307,7 @@ int main()
     //Mc test;
     //saveFile saver;
 
-    /*
+    
     try
     {
         start();
@@ -316,10 +316,10 @@ int main()
     {
         return 0;
     }
-    */
     
-    Legendary defa;
-    cout<<defa.getNextEvolution();
+    
+    //Legendary defa;
+    //cout<<defa.getNextEvolution();
     
 
 }
